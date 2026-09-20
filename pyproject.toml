@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pictly"
+version = "0.1.0"
+description = "Pictly: image toolkit MCP for web work. Trim, normalize, resize, convert, responsive sets and palettes with zero Python dependencies (native PNG engine plus ffmpeg adapter)."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["mcp", "model-context-protocol", "image", "images", "resize", "webp", "palette", "assets", "pictly"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Multimedia :: Graphics",
+]
+
+[project.scripts]
+pictly = "pictly.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
